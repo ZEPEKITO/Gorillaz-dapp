@@ -1,38 +1,173 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.Home, .Assets {
+  background-color: #03091f;
+  display: block;
+  height: 100vh;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+
+
+.header {
+padding-top: 2rem;
+padding-bottom: 3rem;
+display: flex;
+width: 100%;
+justify-content: space-between;
+}
+
+body {
+  font-family:'Poppins', sans-serif;
+}
+
+.container1, .container2 {
+  padding-left: 6rem;
+  padding-right: 6rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #03091f;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+h1 {
+  font-size: 50px;
+  color: #fff;
+}
+
+
+.partLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+.partRight {
+  position: relative;
+}
+
+p {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.colorGradiant {
+  background-color: red;
+
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #ff48fa, #00C4F5);
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.onglet {
+  padding-right: 3rem;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.img1 {
+  border-radius: 15%;
+  width : 600px;
+  height : 600px;
+}
+
+.data {
+  display: flex;
+}
+
+
+.btmExplore, .btmMint {
+  background-image: linear-gradient(to right, #ff48fa 0%, #00C4F5 51%, #ff48fa  100%);
+  padding: 15px 55px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 30px;
+  display: block;
+  font-weight: 900;
+  border: 0;
+  cursor: pointer;
+}
+
+.btmExplore:hover, .btmMint:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.btnConnect {
+  border-radius: 100rem;
+  font-weight: 900;
+  padding: 1rem;
+  font-size: 16px;
+  padding: .5rem 3rem;
+  color: #fff;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 1px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #78e4ff, #ff48fa);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #03091f inset;
+  cursor: pointer;
+}
+
+.btnConnect:hover {
+  box-shadow: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.buttonLeft {
+  padding-right: 3rem;
+}
+.homeButton {
+  display: flex;
+  padding-top: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.slider {
+    background-image: url(img/pinatatest1.png);
+    border-radius: 15%;
+    width : 600px;
+    height : 600px;
+    animation: slide 18s infinite;
+}
+
+@keyframes slide {
+  20% {
+    background-image: url(img/pinatatest2.png);
   }
-  to {
-    transform: rotate(360deg);
+  40% {
+    background-image: url(img/pinatatest3.png);
   }
+  60% {
+    background-image: url(img/pinatatest4.png);
+  }
+  80% {
+    background-image: url(img/pinatatest6.png);
+  }
+  100% {
+    background-image: url(img/pinatatest1.png);
+  }
+
+
 }
