@@ -13,14 +13,14 @@ const GOZaddress = "0xb3020789536402621a405F8aa2CfE276B641dF7c";
 function Assets() {
   const [dataTokenn, setDataToken] = useState([]);
 
-    useEffect(() => {
-      (async function useTest2() {
-        console.log("popopopo");
-        const test = await useRetrieveAssets();
-        console.log("etettetete", test);
-        setDataToken(test);
-      })();
-    }, []);
+  useEffect(() => {
+    (async function useTest2() {
+      console.log("popopopo");
+      const test = await useRetrieveAssets();
+      console.log("etettetete", test);
+      setDataToken(test);
+    })();
+  }, []);
 
   console.log("testAAA", dataTokenn);
 
